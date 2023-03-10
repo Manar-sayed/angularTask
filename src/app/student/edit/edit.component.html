@@ -1,0 +1,24 @@
+<p>edit works!</p>
+<div class="alert alert-danger text-light">
+
+    <div >
+     <label > ID</label> 
+    <input type="text" title="ID" [(ngModel)]= "std._id">
+    <label > Name</label> 
+     <input type="text" title="name" [(ngModel)]= "std.name"><br>
+     <!-- <label > department</label> 
+     <input type="text" title="age" [(ngModel)]= "nstd.department"> -->
+     <button class="bg-dark text-light mx-3 rounded" (click)= "update()">SAVE Changes</button>
+
+    </div>
+</div>
+<style>
+    input{
+        margin: 3px;
+        border:1px solid aqua;
+    }
+    label{
+        color: rgb(192, 12, 12);
+    }
+</style>
+

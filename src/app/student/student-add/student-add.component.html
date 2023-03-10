@@ -1,0 +1,32 @@
+<div class="alert alert-danger text-light">
+    <button class="alert alert-danger text-danger rounded" >Add Std</button>
+    <div >
+     <label > ID</label> 
+    <input type="text" title="ID" [(ngModel)]= "nstd._id">
+    <label > Name</label> 
+     <input type="text" title="name" [(ngModel)]= "nstd.name"><br>
+     <label > department</label> 
+     <input type="text" title="department" [(ngModel)]= "nstd.department"><br>
+     <!-- <label for="dept">department</label>
+     <select id="dept" name="dep">
+       <option value="volvo">OS</option>
+       <option value="saab">SD</option>
+       <option value="fiat">PD</option>
+       <option value="audi">AI</option>
+     </select> -->
+     <!-- <label > department</label> 
+     <input type="text" title="age" [(ngModel)]= "nstd.department"> -->
+     <button class="bg-dark text-light mx-3 rounded" (click)= "save()">SAVE</button>
+
+    </div>
+</div>
+<style>
+    input{
+        margin: 3px;
+        border:1px solid aqua;
+    }
+    label{
+        color: rgb(192, 12, 12);
+    }
+</style>
+

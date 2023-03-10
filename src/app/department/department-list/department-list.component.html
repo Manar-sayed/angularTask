@@ -1,0 +1,33 @@
+<hr>
+<a routerLink="/departments/add" >Add</a>
+<table class="table">
+    <thead class="alert alert-danger">
+      <tr  class="text-danger">
+        <th scope="col">ID</th>
+        <th scope="col">Dept Name</th>
+        <th scope="col">Location</th>
+        <th scope="col">Details</th>
+        <th scope="col">Delete</th>
+       
+       <!--  <th scope="col">DELETE</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of depts">
+        <td>{{item._id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.location}}</td>
+        <td>
+          <a [routerLink]="['/departments','details',item._id]">Details</a>
+        </td>
+        <td><button (click)="delete(item._id)" class=" border border-primary rounded text-danger">delete</button>
+        </td>
+       <!-- <td><button class="alert alert-danger text-danger rounded" (click)= "detailsid=item.id">Details</button>
+        </td> -->
+        <!--  <td><button class="alert alert-danger text-danger rounded" (click)= "delete(item.id)">Delete</button>
+        </td> -->
+      </tr>
+
+    </tbody>
+  </table>
+<router-outlet></router-outlet>

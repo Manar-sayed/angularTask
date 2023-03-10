@@ -1,0 +1,15 @@
+<!-- <button class="alert alert-danger text-danger rounded" >Add Std</button> -->
+<div >
+ <label > ID</label> 
+<input type="text" title="ID" [(ngModel)]= "dept._id">
+<label > Name</label> 
+ <input type="text" title="name" [(ngModel)]= "dept.name"><br>
+ <label > Age</label> 
+ <select [(ngModel)]= "dept.location">
+    <option >Mansoura</option>
+    <option >Alex</option>
+    <option >Assuit</option>
+ </select>
+ <button class="bg-dark text-light mx-3 rounded" (click)= "save()">SAVE</button>
+
+</div>

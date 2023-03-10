@@ -1,0 +1,5 @@
+tr:hover{
+    background-color: rgba(228, 237, 250, 0.676);
+    /* outline-color: hsla(0, 100%, 50%, 0.829); */
+    scale: 1.1 ;
+}

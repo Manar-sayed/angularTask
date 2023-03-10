@@ -1,0 +1,33 @@
+<!-- 
+<button class="alert alert-dangertext-light my-3 mx-3 rounded" (click)= "flag=true" *ngIf= "!flag">Add Std</button>
+<div class="my-3" *ngIf= "flag">
+ ID<input type="text" title="ID" [(ngModel)]= "std._id">
+ Name<input type="text" title="name" [(ngModel)]= "std.name">
+ Age<input type="text" title="age" [(ngModel)]= "std.department">
+ <button class="bg-dark text-light mx-3 rounded" (click)= "save()">SAVE</button>
+
+</div>
+
+<table class="table">
+    <thead class="alert alert-danger">
+      <tr  class="text-danger">
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">Age</th>
+        <th scope="col">EDIT</th>
+        <th scope="col">DELETE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let item of Students">
+        <td>{{item._id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.department}}</td>
+        <td><button class="alert alert-danger text-danger rounded" (click)= "getElement(item)">Edit</button>
+        </td>
+        <td><button class="alert alert-danger text-danger rounded" (click)= "delete(item._id)">Delete</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table> -->

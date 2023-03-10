@@ -1,0 +1,33 @@
+<hr>
+<a routerLink="/students/add" >Add Std</a>
+
+<table class="table">
+    <thead class="alert alert-danger">
+      <tr  class="text-danger">
+        <th scope="col">ID</th>
+        <th scope="col">Name</th>
+        <th scope="col">department</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Details</th>
+        <th scope="col"> Delete</th>
+       <!--  <th scope="col">DELETE</th> -->
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor ="let item of students">
+        <td>{{item._id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.department}}</td>
+        <!-- <td><app-edit (onStdEdit)="edit(item)"></app-edit></td> -->
+        <td><a [routerLink]="['/students','edit']">Edit</a></td>
+
+        <td><a [routerLink]="['/students','details',item._id]">Details</a></td>
+     
+         <td><button class="alert alert-danger text-danger rounded" (click)= "delete(item._id)">Delete</button>
+        </td>
+      </tr>
+
+    </tbody>
+  </table>
+<!-- <app-student-details [id]="detailsid" ></app-student-details> -->
+<router-outlet></router-outlet>
